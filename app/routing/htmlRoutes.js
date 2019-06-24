@@ -2,6 +2,8 @@ var express = require("express");
 var router = express.Router();
 var path = require("path");
 
+
+module.exports = (router) => {
 // A GET Route to `/survey` which should display the survey page.
 router.get("/survey", (req, res) => {
 
@@ -15,4 +17,4 @@ router.get("*", function (req, res) {
     res.sendFile(path.join(__dirname, "/../public/home.html"));
 });
 
-module.exports = htmlRoutes;
+}
