@@ -1,6 +1,6 @@
 var express = require("express");
 var router = express.Router();
-var friends = require("../data/friends.js")
+var friends = require("../data/friends")
 
 router.get("/api/friends", (req, res) => {
     res.json(friends)
@@ -45,3 +45,5 @@ router.post("/api/friends", (req, res) => {
     res.json (friendMatch)
 
 })
+
+module.exports = apiRoutes;
