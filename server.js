@@ -17,12 +17,15 @@ require("./app/routing/htmlRoutes");
 
 
 
-
+// // //TEST router & friends module
 // router.get("/api/friends",(req, res) => {
 //     res.json (friends);
     
 // });
 
+
+// Tell express to use this router with '/' before.
+// You can put just '/' if you don't want any sub path before routes.
 app.use("/",router);
 
 app.listen (PORT, () => console.log ("Server started on port" + PORT));
