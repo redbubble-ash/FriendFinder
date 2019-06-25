@@ -17,6 +17,7 @@ module.exports = (router) => {
             scoreDifference : Infinity
         }
 
+        var userData = req.body;
         var userScore = req.body.scores;
         var totalScoreDifference = 0;
 
@@ -43,7 +44,7 @@ module.exports = (router) => {
 
         }
 
-        friends.push(req.body);
+        friends.push(userData);
 
         res.json(friendMatch)
 

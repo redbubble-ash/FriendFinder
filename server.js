@@ -12,16 +12,16 @@ app.use(express.urlencoded({ extended: true }));
 // express.json() is a method inbuilt in express to recognize the incoming Request Object as a JSON Object. 
 app.use(express.json());
 
-require("./app/routing/apiRoutes");
-require("./app/routing/htmlRoutes");
+require("./app/routing/apiRoutes")(router);
+require("./app/routing/htmlRoutes")(router);
 
 
 
 // // //TEST router & friends module
-router.get("/api/friends",(req, res) => {
-    res.json (friends);
+// router.get("/api/friends",(req, res) => {
+//     res.json (friends);
     
-});
+// });
 
 
 // Tell express to use this router with '/' before.
