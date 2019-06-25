@@ -153,11 +153,15 @@
                     <option value="4">4</option>
                     <option value="5">5 (Strongly Agree)</option>
                 </select>
+                <hr>
+                <!-- Submit Button -->
+                <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit">Submit</button>
 
             </div>
             <div class="col-1">
             </div>
         </div>
+
 
     </div>
 
@@ -266,8 +270,8 @@
                     $("#match-name").text(data.name);
                     $("#match-img").attr("src", data.photo);
 
-                    // Show the modal with the best match
-                    $("#results-modal").modal("toggle");
+                    // // Show the modal with the best match
+                    // $("#results-modal").modal("toggle");
 
                 });
             } else {

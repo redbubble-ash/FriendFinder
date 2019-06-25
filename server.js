@@ -18,10 +18,10 @@ require("./app/routing/htmlRoutes");
 
 
 // // //TEST router & friends module
-// router.get("/api/friends",(req, res) => {
-//     res.json (friends);
+router.get("/api/friends",(req, res) => {
+    res.json (friends);
     
-// });
+});
 
 
 // Tell express to use this router with '/' before.
