@@ -12,6 +12,7 @@ app.use(express.urlencoded({ extended: true }));
 // express.json() is a method inbuilt in express to recognize the incoming Request Object as a JSON Object. 
 app.use(express.json());
 
+// To serve static files such as images, CSS files, and JavaScript file
 app.use(express.static('./app/public'));
 
 require("./app/routing/apiRoutes")(router);
